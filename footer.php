@@ -11,9 +11,11 @@
 
 	<footer>
 		<div>
-			<a href="<?php echo home_url(); ?>">
-				<img class="logo logo--footer" src="<?php echo get_theme_file_uri('/images/logo.svg'); ?>" alt="<?php bloginfo('title'); ?> Logo" />
-			</a>
+			<?php 
+			$image = get_field('site_logo','option'); 
+			if (! empty($image)): ?>
+					<a href="<?php echo home_url(); ?>"><img class="logo logo--footer" src="<?php echo $image['url']; ?>" alt="<?php bloginfo('title'); ?> Logo"></a>
+			<?php endif; ?>
 		</div>
 
 		<div>
@@ -28,7 +30,14 @@
 		<div>
 			<p>&copy; <?php echo get_bloginfo('name'); ?> <?php echo date('Y'); ?>. All Rights Reserved</p>				
 			<p><a href="<?php echo site_url('cookies-privacy-policy/'); ?>">Cookies &amp; Privacy Policy</a></p>
-			<p><a class="adtrak" href="https://adtrak.co.uk" role="outgoing"><img src="http://static.adtrak.co.uk/email/201504/svg/adtrak-logo.svg" alt="Adtrak"></a></p>
+			<?php 
+			/** 
+				* get_adtrak_logo accepts two arguments 
+				* 'colour' (as white, black, orange/default) and 
+				* 'icon' (as true or false) 
+				* e.g. for the black icon use get_adtrak_logo('black', true)
+			*/ ?>
+		    <p><a class="adtrak" href="https://www.adtrak.co.uk" role="outgoing"><?php echo get_adtrak_logo(); ?></a></p>
 		</div>
 	</footer>
 
