@@ -5,38 +5,38 @@
 
 // variables, funcs, placeholders
 @import
-    'abstracts/variables',
-    'abstracts/functions',
-    'abstracts/mixins',
-    'abstracts/placeholders';
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/placeholders';
 
 // base (reset, typography, core, animations)
 @import
-    'base/reset',
+  'base/reset',
 	'base/core',
-    'base/typography';
+  'base/typography';
 
 // components (buttons, carousel, dropdown, cover, accordian, tables)
 @import
-	'components/buttons',
-    'components/table';
+  'components/buttons',
+  'components/table';
 
 // layout files (head, form, buttons, nav, etc)
 @import
-    'layout/navigation',
-    'layout/grid',
-	'layout/header',
-	'layout/footer',
-	'layout/forms',
-	'layout/sidebar';
+  'layout/navigation',
+  'layout/grid',
+  'layout/header',
+  'layout/footer',
+  'layout/forms',
+  'layout/sidebar';
 
 @import
-	'pages/home',
-    'pages/contact';
+  'pages/home',
+  'pages/contact';
 
 // vendors here, will allow you to overwrite later.
 @import
-    'vendors/mmenu';
+  'vendors/mmenu';
 
 // themes (i.e. admin theme, alternative themes per region/lang etc.)
 // @import 'theme/admin';

@@ -1,6 +1,11 @@
 /*
  * @version 1.0
 */
+nav[role="navigation"], .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1368px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -121,6 +126,38 @@ input[type="reset"] {
   display: inline-block;
   padding: 0.5em 0.8em; }
 
+.burger-menu {
+  position: relative;
+  height: 20px;
+  width: 17px;
+  display: block; }
+  .burger-menu:hover {
+    cursor: pointer; }
+  .burger-menu span {
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    background: #000;
+    transition: 0.5s; }
+  .burger-menu span:first-child {
+    top: 4px; }
+  .burger-menu span:last-child {
+    top: 16px; }
+  .burger-menu.active span {
+    opacity: 0;
+    top: 50%; }
+  .burger-menu.active span:first-child {
+    opacity: 1;
+    transform: rotate(221deg); }
+  .burger-menu.active span:last-child {
+    opacity: 1;
+    transform: rotate(-221deg); }
+
 form > * + * {
   margin: 1em 0; }
 
@@ -200,7 +237,7 @@ form input[type="file"] {
   transform: translate3d(-30%, 0, 0); }
 
 .mm-panel.mm-highest {
-  z-index: 1; }
+  z-index: 2; }
 
 .mm-panel.mm-noanimation {
   transition: none !important; }
@@ -523,7 +560,7 @@ html.mm-blocking #mm-blocker {
 .mm-menu.mm-offcanvas {
   width: 80%;
   min-width: 140px;
-  max-width: 440px; }
+  max-width: 340px; }
 
 html.mm-opening .mm-menu ~ .mm-slideout {
   transform: translate(80%, 0);
@@ -536,8 +573,8 @@ html.mm-opening .mm-menu ~ .mm-slideout {
 
 @media all and (min-width: 550px) {
   html.mm-opening .mm-menu ~ .mm-slideout {
-    transform: translate(440px, 0);
-    transform: translate3d(440px, 0, 0); } }
+    transform: translate(340px, 0);
+    transform: translate3d(340px, 0, 0); } }
 
 .mm-sronly {
   border: 0 !important;

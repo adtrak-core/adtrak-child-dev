@@ -10,12 +10,25 @@
 	$(function() {
         $("#primaryNavigation").mmenu({
             "offCanvas": {
-                'zposition': "front",
+                'zposition': "front", // makes the menu appear above
                 'position': "right"
             }
         }, {
             clone: true,
-            transitionDuration: 440
+            transitionDuration: 340
+        });
+
+        var api = $("#mm-primaryNavigation").data('mmenu');
+
+        // triggers breadcrumb animate on open
+        api.bind("open:before", function($panel) {
+            console.log('open');
+            $('.burger-menu').addClass('active');
+        });
+
+        // triggers breadcrumb animate on close
+        api.bind("close:before", function($panel) {
+            $('.burger-menu').removeClass('active');
         });
 	});
 

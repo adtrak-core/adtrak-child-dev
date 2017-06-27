@@ -1,13 +1,13 @@
 %hide {
-    display: none;
+  display: none;
 }
 
 %clearfix {
-    @include clearfix;
+  @include clearfix;
 }
 
 %container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: size(max);
+  margin: 0 auto;
+  width: 100%;
+  max-width: size('max');
 }

@@ -60,7 +60,7 @@ $mm-subnav-opacity: 0.4;
 }
 
 .mm-panel.mm-highest {
-    z-index: 1;
+    z-index: 2;
 }
 
 .mm-panel.mm-noanimation {
@@ -450,7 +450,7 @@ html.mm-blocking #mm-blocker {
 .mm-menu.mm-offcanvas {
     width: 80%;
     min-width: 140px;
-    max-width: 440px;
+    max-width: 340px;
 }
 
 html.mm-opening .mm-menu~.mm-slideout {
@@ -465,8 +465,8 @@ html.mm-opening .mm-menu~.mm-slideout {
 }
 @media all and (min-width:550px) {
     html.mm-opening .mm-menu~.mm-slideout {
-        transform: translate(440px,0);
-        transform: translate3d(440px,0,0);
+        transform: translate(340px,0);
+        transform: translate3d(340px,0,0);
     }
 }
 
