@@ -1,6 +1,6 @@
 <?php
 /**
- * The header output and functionality. Most of the output of CSS, JS, 
+ * The header output and functionality. Most of the output of CSS, JS,
  * etc will be carried out via the functions and there should be minimal
  * need to change anything in the head.
  * @author  Adtrak
@@ -17,7 +17,7 @@
 
   	<?php wp_head(); ?>
 
-	<?php 
+	<?php
 	// if (get_field('google_analytics', 'options')) echo get_field('google_analytics', 'options');
 	// if (get_field('schema', 'options')) echo get_field('schema', 'options'); ?>
 </head>
@@ -28,13 +28,18 @@
 			<h1><img src="<?php echo get_theme_file_uri('/images/logo.svg'); ?>" alt="<?php echo get_bloginfo('name'); ?>" class="logo__image"></h1>
 		</div>
 
-		<nav role="navigation">
+    	<a href="#primaryNavigation">Nav</a>
+
+		<nav id="primaryNavigation" role="navigation">
 			<?php wp_nav_menu([
-				'menu' => 'Primary Menu', 
-				'menu_class' => "nav nav--header", 
+				'menu' => 'Primary Menu',
+				'menu_class' => "nav nav--header",
 				'container' => ''
 			]); ?>
 		</nav>
 	</header>
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
 
 	<main class="site-content">

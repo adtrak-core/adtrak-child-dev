@@ -1,36 +1,42 @@
 /*
-No Need for any of the WordPress css headings here. The admin panel 
-does not read this file. However, this file is where all of your 
-sites style will go.
+ * @version 1.0
 */
 
+
+// variables, funcs, placeholders
 @import
     'abstracts/variables',
     'abstracts/functions',
     'abstracts/mixins',
     'abstracts/placeholders';
 
+// base (reset, typography, core, animations)
 @import
     'base/reset',
 	'base/core',
     'base/typography';
 
+// components (buttons, carousel, dropdown, cover, accordian, tables)
 @import
-	'vendors/owl-carousel';
+	'components/buttons',
+    'components/table';
 
+// layout files (head, form, buttons, nav, etc)
 @import
+    'layout/navigation',
+    'layout/grid',
 	'layout/header',
 	'layout/footer',
-	'layout/table',
 	'layout/forms',
-	'layout/grid',
-	'layout/navigation',
 	'layout/sidebar';
 
 @import
-	'components/buttons',
-	'components/carousel';
+	'pages/home',
+    'pages/contact';
 
+// vendors here, will allow you to overwrite later.
 @import
-	'pages/contact',
-	'pages/home';
+    'vendors/mmenu';
+
+// themes (i.e. admin theme, alternative themes per region/lang etc.)
+// @import 'theme/admin';
