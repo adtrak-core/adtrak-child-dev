@@ -10,10 +10,12 @@
 	$(function() {
         $("#primaryNavigation").mmenu({
             "offCanvas": {
-                position: "right"
+                'zposition': "front",
+                'position': "right"
             }
         }, {
-            clone: true
+            clone: true,
+            transitionDuration: 440
         });
 	});
 
