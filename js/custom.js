@@ -32,4 +32,22 @@
         });
 	});
 
+    /**
+     * Trigger the window when it scrolls passed header offset.
+     * adds a margin to the body so that it stopps a "jagged" bounce.
+     */
+
+    var $navOffsetTop = 100,
+        $navHeight = '30px';
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > $navOffsetTop) {
+            $('#primaryNavigation').addClass('fixed');
+            $('body').css('margin-top', $navHeight);
+        } else {
+            $('#primaryNavigation').removeClass('fixed');
+            $('body').css('margin-top', '0');
+        }
+    });
+
 }(jQuery));

@@ -165,7 +165,8 @@ input[type="reset"] {
     color: #000000; }
     .nav--header a:hover, .nav--header a:focus {
       color: #F1533A; }
-  .nav--header li.current_page_item {
+  .nav--header li.current_page_item,
+  .nav--header li.current_page_parent {
     background-color: #ddd; }
   .nav--header li {
     display: inline-block; }
@@ -184,6 +185,13 @@ input[type="reset"] {
   .nav--header ul > ul > ul {
     top: 0;
     left: 100%; }
+
+.site-header__navigation.fixed {
+  background: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .nav--footer ul {
   width: 100%;
