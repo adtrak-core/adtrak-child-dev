@@ -9,16 +9,16 @@
 
 get_header(); ?>
 
-	<section>
+	<section class="container">
 		<?php if (have_posts()): while (have_posts()): the_post(); ?>
-			
+
 			<?php the_title('<h1>', '</h1>'); ?>
 			<?php the_content(); ?>
-	
+
 		<?php endwhile; else: ?>
-		
+
 			<p>Nothing to see.</p>
-	
+
 		<?php endif; ?>
 	</section>
 

@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/.editorconfig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.editorconfig",
+		"oF": 0
+		},
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -94,6 +100,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/js\/custom.min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/custom.min.js.map",
+		"oF": 0
 		},
 	"\/js\/libs\/.gitkeep": {
 		"ft": 8192,
@@ -390,6 +402,19 @@
 		"oA": 2,
 		"oAP": "\/scss\/vendors\/.gitkeep",
 		"oF": 0
+		},
+	"\/scss\/vendors\/_adtrak.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_adtrak.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/scss\/vendors\/_mmenu.scss": {
 		"aP": 0,

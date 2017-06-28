@@ -18,7 +18,7 @@
         <div class="container site-header__top">
             <div class="logo">
                 <!-- <h1><img src="<?= get_option('site_logo', 'options'); ?>" alt="<?= get_bloginfo('name'); ?>" class="logo__image"></h1> -->
-                <h1><?= get_bloginfo('name'); ?></h1>
+                <h1><a href="<?= site_url('/'); ?>" title="Link to Home Page"><?= get_bloginfo('name'); ?></a></h1>
             </div>
 
             <a href="#primaryNavigation" class="burger-menu"><span></span><span></span><span></span></a>

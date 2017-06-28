@@ -9,16 +9,8 @@
 
 	</main>
 
-	<footer>
-		<div>
-			<?php
-			$image = get_field('site_logo','option');
-			if (! empty($image)): ?>
-					<a href="<?php echo home_url(); ?>"><img class="logo logo--footer" src="<?php echo $image['url']; ?>" alt="<?php bloginfo('title'); ?> Logo"></a>
-			<?php endif; ?>
-		</div>
-
-		<div>
+	<footer class="site-footer">
+		<div class="site-footer__column">
 			<h6>Explore</h6>
 			<?php wp_nav_menu([
 				'menu' => 'Footer Menu',
@@ -27,9 +19,19 @@
 			]); ?>
 		</div>
 
-		<div>
+        <div class="site-footer__column">
+			<h6>Other Links</h6>
+			<?php wp_nav_menu([
+				'menu' => 'Footer Other',
+				'menu_class' => 'nav nav--footer',
+				'container' => ''
+			]); ?>
+            <p><a href="<?php echo site_url('cookies-privacy-policy/'); ?>">Cookies &amp; Privacy Policy</a></p>
+            
+		</div>
+
+		<div class="site-footer__column">
 			<p>&copy; <?php echo get_bloginfo('name'); ?> <?php echo date('Y'); ?>. All Rights Reserved</p>
-			<p><a href="<?php echo site_url('cookies-privacy-policy/'); ?>">Cookies &amp; Privacy Policy</a></p>
 			<?php
 			/**
 				* get_adtrak_logo accepts two arguments

@@ -68,6 +68,24 @@
   }
 }
 
+.nav--footer {
+  ul {
+    width: 100%;
+    display: block;
+  }
+
+  li {
+    @include bp('small') {
+      display: inline-block;
+      width: 49%;
+    }
+  }
+
+  li > ul {
+    display: none;
+  }
+}
+
 // Hamburger with Transition
 .burger-menu {
   height: 20px;
