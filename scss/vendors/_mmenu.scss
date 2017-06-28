@@ -137,6 +137,12 @@ li.mm-vertical.mm-opened > .mm-panel {
     z-index: 1;
 }
 
+.mm-panels {
+  li.current_page_item {
+    background: darken(color('dark-grey'), 5%);
+  }
+}
+
 .mm-clear:after,
 .mm-clear:before,
 .mm-close:after,

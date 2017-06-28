@@ -11,7 +11,7 @@
         $("#primaryNavigation").mmenu({
             "offCanvas": {
                 'zposition': "front", // makes the menu appear above
-                'position': "right"
+                'position': "left"
             }
         }, {
             clone: true,

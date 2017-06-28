@@ -13,23 +13,23 @@
 </head>
 <body <?php body_class(); ?>>
 
-<div class="wrapper">
-<header role="header">
-    <div class="container">
-        <div class="logo">
-            <!-- <h1><img src="<?= get_option('site_logo', 'options'); ?>" alt="<?= get_bloginfo('name'); ?>" class="logo__image"></h1> -->
-            <h1><?= get_bloginfo('name'); ?></h1>
+
+    <header role="header" class="site-header">
+        <div class="container site-header__top">
+            <div class="logo">
+                <!-- <h1><img src="<?= get_option('site_logo', 'options'); ?>" alt="<?= get_bloginfo('name'); ?>" class="logo__image"></h1> -->
+                <h1><?= get_bloginfo('name'); ?></h1>
+            </div>
+
+            <a href="#primaryNavigation" class="burger-menu"><span></span><span></span><span></span></a>
         </div>
 
-        <a href="#primaryNavigation" class="burger-menu"><span></span><span></span><span></span></a>
-    </div>
+        <nav id="primaryNavigation" class="site-header__navigation" role="navigation">
+            <?php wp_nav_menu([
+                'menu' => 'Primary Menu',
+                'menu_class' => "nav nav--header"
+            ]); ?>
+        </nav>
+    </header>
 
-    <nav id="primaryNavigation" role="navigation">
-        <?php wp_nav_menu([
-            'menu' => 'Primary Menu',
-            'menu_class' => "nav nav--header"
-        ]); ?>
-    </nav>
-</header>
-
-<main class="site-content">
+    <main class="site-content">

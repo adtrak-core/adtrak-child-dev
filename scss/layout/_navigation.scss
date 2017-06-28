@@ -1,12 +1,85 @@
-nav[role="navigation"] {
-  @extend %container;
+.nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li.current_page_item {
+
+  }
 }
 
+.nav--header {
+  display: none;
+  @extend %container;
+
+  @include bp('medium') {
+    display: block;
+  }
+
+  a {
+    display: block;
+    padding: 0 15px;
+    line-height: 200%;
+    color: color('link-hover');
+
+    &:hover, &:focus {
+      color: color('link-default');
+    }
+  }
+
+  li.current_page_item {
+    background-color: #ddd;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li:hover > ul {
+    display: block;
+  }
+
+
+  li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    li {
+      display: block;
+      width: 200px;
+    }
+
+    a {
+      line-height: 120%;
+    }
+  }
+
+  ul > ul > ul {
+    top: 0;
+    left: 100%
+  }
+}
+
+// Hamburger with Transition
 .burger-menu {
-  position: relative;
   height: 20px;
   width: 17px;
   display: block;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+
+  @include bp('medium') {
+    display: none;
+  }
 
   &:hover {
     cursor: pointer;
