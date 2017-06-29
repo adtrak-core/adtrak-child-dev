@@ -1,0 +1,32 @@
+table {
+  display: block;
+  max-width: min-content;
+  overflow-x: auto;
+  white-space: nowrap; // optional - looks better for small cell values
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 15px;
+
+  thead {}
+
+  tbody {}
+
+  tr {}
+
+  th {
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  td,
+  th {
+    padding: 6px 12px;
+    border: 1px solid #d9d7ce;
+  }
+
+  &.no-margin {
+    margin-bottom: 0;
+  }
+}

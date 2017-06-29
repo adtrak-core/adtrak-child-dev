@@ -152,6 +152,28 @@ input[type="reset"] {
   display: inline-block;
   padding: 0.5em 0.8em; }
 
+table {
+  display: block;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 15px; }
+  table th {
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 600; }
+  table td,
+  table th {
+    padding: 6px 12px;
+    border: 1px solid #d9d7ce; }
+  table.no-margin {
+    margin-bottom: 0; }
+
 .nav ul {
   list-style: none;
   padding-left: 0;

@@ -15,7 +15,7 @@
 /// .foo {
 ///   color: red;
 ///
-///  @include respond-to('medium') {
+///  @include bp('medium') {
 ///    color: blue;
 ///  }
 ///}
