@@ -1,13 +1,12 @@
 .site-footer {
 	@extend %container;
+  padding: 30px 10px;
 
   @include bp('small') {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
   }
-
-  padding: 30px 10px;
 }
 
 .site-footer__column {

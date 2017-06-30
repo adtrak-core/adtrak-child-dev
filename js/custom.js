@@ -1,6 +1,6 @@
 // Want to include some JS?
 // @codekit-prepend "libs/mmenu.js"
-
+// @prepros-prepend "libs/mmenu.js"
 
 // binds $ to jquery, requires you to write strict code. Will fail validation if it doesn't match requirements.
 (function($) {

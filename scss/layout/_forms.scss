@@ -1,12 +1,11 @@
 form {
-
-    > * + * {
-        margin: 1em 0;
-    }
+  > * + * {
+      margin: 1em 0;
+  }
 
 	label {
  		display: block;
-        position: relative;
+    position: relative;
 	}
 
 	input[type="text"],
@@ -28,11 +27,11 @@ form {
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 
 	input[type="file"] {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 
 	fieldset {
@@ -40,6 +39,6 @@ form {
 	}
 
 	legend {
-		
+
 	}
 }

@@ -5,6 +5,7 @@ h4,
 h5,
 h6 {
 	font-family: $headerFont;
+  font-weight: 600;
 }
 
 h1 {
@@ -76,11 +77,16 @@ a {
 
 	}
 
+  &:active {
+
+  }
+
 	&:focus, &:hover {
     color: color('link-hover');
 	}
 }
 
 small {
-	font-size: 1.4rem; // 14px;
+  font-size: 13px;
+	font-size: 1.3rem; // 14px;
 }
