@@ -113,7 +113,9 @@ h6 {
 
 p {
   font-size: 16px;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 15px; }
 
 ul, ol {
   font-size: 16px;
@@ -147,10 +149,48 @@ button,
 .button,
 input[type="submit"],
 input[type="reset"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   transition: .3s;
   text-decoration: none;
   display: inline-block;
-  padding: 0.5em 0.8em; }
+  border: 0;
+  padding: 7px 13px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #F1533A;
+  cursor: pointer; }
+  button:disabled,
+  .button:disabled,
+  input[type="submit"]:disabled,
+  input[type="reset"]:disabled {
+    cursor: default;
+    background-color: grey; }
+    button:disabled:hover,
+    .button:disabled:hover,
+    input[type="submit"]:disabled:hover,
+    input[type="reset"]:disabled:hover {
+      background-color: grey; }
+  button:hover, button:focus,
+  .button:hover,
+  .button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus {
+    background-color: #000000; }
+
+.button--small {
+  padding: 4px 9px; }
+
+.button--black {
+  background-color: #000;
+  color: #fff; }
+
+.button--white {
+  background-color: #fff;
+  color: #000; }
 
 table {
   display: block;
@@ -205,7 +245,8 @@ table {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0; }
+    left: 0;
+    background-color: #fff; }
     .nav--header li > ul li {
       display: block;
       width: 200px; }

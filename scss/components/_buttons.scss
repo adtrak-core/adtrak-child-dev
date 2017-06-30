@@ -2,32 +2,48 @@ button,
 .button,
 input[type="submit"],
 input[type="reset"] {
-	transition: .3s;
+  appearance: none;
+  transition: .3s;
 	text-decoration: none;
 	display: inline-block;
-	padding: 0.5em 0.8em;
+  border: 0;
+  padding: 7px 13px;
+  font-size: 1.6rem;
+
+  color: color('white');
+  background-color: color('button-default');
+  cursor: pointer;
 
 	&:disabled {
-		
+    cursor: default;
+    background-color: grey;
+
+    &:hover {
+        background-color: grey;
+    }
 	}
 
-	&:active {
-
+	&:hover,
+  &:focus {
+    background-color: color('button-hover');
 	}
 
-	&:hover {
+  &:active {
 
-	}
-
-	&:focus {
-
-	}
+  }
 }
 
+.button--small {
+  padding: 4px 9px;
+}
+
+/// EXAMPLE BUTTONS
 .button--black {
-	color: color(black);
+  background-color: color('black');
+	color: color('white');
 }
 
 .button--white {
-	color: color(white);
+  background-color: color('white');
+	color: color('black');
 }

@@ -81,6 +81,13 @@ get_header(); ?>
   </tbody>
 </table>
 
+<h3>Buttons</h3>
+
+<p>Default: <button type="button" name="button">Button</button></p>
+<p>Small: <button type="button" name="button" class="button--small">Button</button></p>
+<p>Default: <input type="submit" name="button" value="Button"></p>
+<p>Disabled: <input type="submit" name="button" disabled value="Disabled"></p>
+
 		<?php if (have_posts()): while (have_posts()): the_post(); ?>
 
 			<?php the_title('<h1>', '</h1>'); ?>
