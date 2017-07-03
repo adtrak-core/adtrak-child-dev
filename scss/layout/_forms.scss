@@ -1,44 +1,68 @@
 form {
   > * + * {
-      margin: 1em 0;
+    margin: 1em 0;
   }
 
-	label {
- 		display: block;
+  label {
+    display: block;
     position: relative;
-	}
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 
-	input[type="text"],
-	input[type="email"],
-	input[type="url"],
-	input[type="tel"],
-	input[type="date"],
-	input[type="number"] {
- 		width: 100%;
-	}
+  input:not([type='checkbox']):not([type='radio']),
+  select,
+  textarea {
+    padding: 9px 11px;
+    outline: none;
+    font-size: inherit;
+    border: 1px solid color('dark-grey');
+    width: 100%;
+  }
 
-	textarea {
- 		width: 100%;
-	}
+  input[type="date"],
+  input[type="time"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"] {
+    }
 
-	select {
- 		width: 100%;
-	}
+  textarea {
+    min-height: 150px;
+  }
 
-	input[type="checkbox"],
-	input[type="radio"] {
-		font-size: 1.6rem;
-	}
+  select {
+    appearance: none;
+    border-radius: 0;
+    background-color: #fff;
+  }
 
-	input[type="file"] {
-		font-size: 1.6rem;
-	}
+  input[type="checkbox"],
+  input[type="radio"] {
+    font-size: 1.6rem;
+  }
 
-	fieldset {
+  input[type="file"] {
+    font-size: 1.6rem;
+  }
 
-	}
+  fieldset {}
 
-	legend {
+  legend {}
 
-	}
+  ::placeholder {
+
+  }
+
+  .label--inline {
+    display: inline-block;
+    font-weight: 400;
+
+    & + * {
+      margin-left: 10px
+    }
+  }
+
 }

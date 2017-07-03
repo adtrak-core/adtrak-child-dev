@@ -2,3 +2,31 @@
   @extend %container;
   padding: 0 10px;
 }
+
+.row {
+    @include grid-row;
+}
+
+.row.reverse {
+    @include grid-row-direction(true);
+}
+
+.col.reverse {
+    @include grid-column-direction($reverse: true);
+}
+
+@each $key, $value in $breakpoints {
+    @if ($key == small) {
+        @include example-viewport($key);
+    } @else {
+        $min-width: map-get($value, "min-width");
+        @media screen and (min-width: $min-width) {
+            @include example-viewport($key);
+
+            // .container {
+            //     width: $min-width;
+            // }
+        }
+
+    }
+}
