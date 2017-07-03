@@ -25,3 +25,9 @@ $breakpoints: (
 // Fonts
 $primaryFont: ('helvetica', 'sans-serif');
 $headerFont: ('helvetica', 'sans-serif');
+
+// Grid Sizing
+$columns: 12;
+$gutter-width: 2rem;
+$half-gutter-width: $gutter-width / 2;
+$gutter-compensation: -1 * $half-gutter-width;
