@@ -7,8 +7,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('build', get_theme_file_uri('/css/main.css'), [], '', 'all');
     wp_enqueue_script('build', get_theme_file_uri('/js/custom.min.js'), ['jquery']);
 
-    // if using contact form plugin, uncomment below
-    // wp_dequeue_style('forms-front');
+    // if not using contact form plugin, delete below
+    wp_dequeue_style('forms-front');
 });
 
 add_action('after_setup_theme', function () {
