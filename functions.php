@@ -6,6 +6,9 @@
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('build', get_theme_file_uri('/css/main.css'), [], '', 'all');
     wp_enqueue_script('build', get_theme_file_uri('/js/custom.min.js'), ['jquery']);
+
+    // if using contact form plugin
+    wp_dequeue_style('storage-front');
 });
 
 add_action('after_setup_theme', function () {

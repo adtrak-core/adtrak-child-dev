@@ -1,0 +1,50 @@
+$owl-item-padding: 30px;
+$owl-nav-offset: -1 * (1rem + $base-margin + 1rem); // pulls the nav over the slider (offset by dots)
+
+.carousel {
+  position: relative;
+  margin-bottom: $base-margin;
+}
+
+.owl-item {
+  padding: $owl-item-padding;
+  background-color: #eee;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: $base-margin;
+}
+
+.owl-dot {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #aaa;
+  margin: 0 3px;
+
+  &.active {
+    background-color: color('link-default');
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: $owl-nav-offset;
+
+  .owl-prev {
+    position: absolute;
+    left: 5px;
+    font-size: 3rem;
+  }
+
+  .owl-next {
+    position: absolute;
+    right: 5px;
+    font-size: 3rem;
+  }
+}

@@ -1,6 +1,7 @@
 form {
-  > * + * {
-    margin: 1em 0;
+  > * + *,
+  fieldset > * + * {
+    margin: $base-margin 0;
   }
 
   label {
@@ -16,7 +17,7 @@ form {
     padding: 9px 11px;
     outline: none;
     font-size: inherit;
-    border: 1px solid color('dark-grey');
+    border: 1px solid #ddd;
     width: 100%;
   }
 

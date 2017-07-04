@@ -19,7 +19,8 @@
 // components (buttons, carousel, dropdown, cover, accordian, tables)
 @import
   'components/buttons',
-  'components/tables';
+  'components/tables',
+  'components/carousel';
 
 // layout files (head, form, buttons, nav, etc)
 @import
@@ -37,7 +38,8 @@
 // vendors here, will allow you to overwrite later.
 @import
   'vendors/mmenu',
-  'vendors/adtrak';
+  'vendors/adtrak',
+  'vendors/owl-carousel';
 
 // themes (i.e. admin theme, alternative themes per region/lang etc.)
 // @import 'theme/admin';
