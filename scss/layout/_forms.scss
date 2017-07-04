@@ -11,7 +11,7 @@ form {
     margin-bottom: 10px;
   }
 
-  input:not([type='checkbox']):not([type='radio']),
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']),
   select,
   textarea {
     padding: 9px 11px;

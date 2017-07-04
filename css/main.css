@@ -1222,7 +1222,7 @@ form label {
   font-weight: 600;
   margin-bottom: 10px;
 }
-form input:not([type='checkbox']):not([type='radio']),
+form input:not([type='checkbox']):not([type='radio']):not([type='submit']),
 form select,
 form textarea {
   padding: 9px 11px;
