@@ -5,49 +5,44 @@ h4,
 h5,
 h6 {
 	font-family: $headerFont;
-  font-weight: 600;
+  font-weight: inherit;
+  margin: $base-margin 0 ($base-margin/2);
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 36px;
-	font-size: 3.6rem; //36px
+  margin-top: 0;
+	font-size: 4.2rem; //42px
 }
 
 h2 {
-  font-size: 28px;
-	font-size: 2.8rem; //28px
+	font-size: 3.8rem; //28px
 }
 
 h3 {
-  font-size: 24px;
-	font-size: 2.4rem; //24px
+	font-size: 3.2rem; //24px
 }
 
 h4 {
-  font-size: 20px;
-	font-size: 2rem; //20px
+	font-size: 2.6rem; //20px
 }
 
 h5 {
-  font-size: 18px;
-	font-size: 1.8rem; //18px
+	font-size: 2.1rem; //18px
 }
 
 h6 {
-  font-size: 16px;
-	font-size: 1.6rem; //16px
+	font-size: 1.7rem; //16px
 }
 
 p {
-  font-size: 16px;
-	font-size: 1.6rem; //16px
-  line-height: 1.7;
-  margin-bottom: 15px;
+	font-size: 1.7rem; //16px
+  line-height: 1.55;
+  margin-bottom: ($base-margin / 1.5);
 }
 
 ul, ol {
-  font-size: 16px;
-	font-size: 1.6rem; //16px
+	font-size: 1.7rem; //16px
   padding-left: 15px;
 }
 

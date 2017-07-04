@@ -91,49 +91,44 @@ h4,
 h5,
 h6 {
   font-family: "helvetica", "sans-serif";
-  font-weight: 600;
+  font-weight: inherit;
+  margin: 2rem 0 1rem;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 36px;
-  font-size: 3.6rem;
+  margin-top: 0;
+  font-size: 4.2rem;
 }
 
 h2 {
-  font-size: 28px;
-  font-size: 2.8rem;
+  font-size: 3.8rem;
 }
 
 h3 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 
 h4 {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 h5 {
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 
 h6 {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 p {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  margin-bottom: 15px;
+  font-size: 1.7rem;
+  line-height: 1.55;
+  margin-bottom: 1.3333333333rem;
 }
 
 ul, ol {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding-left: 15px;
 }
 
