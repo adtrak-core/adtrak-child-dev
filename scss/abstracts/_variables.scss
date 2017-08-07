@@ -15,6 +15,14 @@ $sizes: (
   'max': 1368px
 );
 
+$grid: (
+  'xs': '',
+  'sm': (min-width: 450px),
+  'md': (min-width: 800px),
+  'lg': (min-width: 1000px),
+  'xl': (min-width: 1200px),
+);
+
 $breakpoints: (
   'small': (min-width: 450px),
   'medium': (min-width: 800px),

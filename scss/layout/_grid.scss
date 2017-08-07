@@ -15,7 +15,7 @@
     @include grid-column-direction($reverse: true);
 }
 
-@each $key, $value in $breakpoints {
+@each $key, $value in $grid {
     @if ($key == small) {
         @include example-viewport($key);
     } @else {
