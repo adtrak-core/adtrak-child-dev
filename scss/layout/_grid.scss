@@ -1,6 +1,6 @@
 .container {
-  @extend %container;
-  padding: 0 10px;
+    @extend %container;
+    padding: 0 10px;
 }
 
 .row {
@@ -16,7 +16,7 @@
 }
 
 @each $key, $value in $grid {
-    @if ($key == small) {
+    @if ($key == 'xs') {
         @include example-viewport($key);
     } @else {
         $min-width: map-get($value, "min-width");
