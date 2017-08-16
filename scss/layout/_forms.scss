@@ -1,9 +1,4 @@
 form {
-  > * + *,
-  fieldset > * + * {
-    margin: $base-margin 0;
-  }
-
   label {
     display: block;
     position: relative;
