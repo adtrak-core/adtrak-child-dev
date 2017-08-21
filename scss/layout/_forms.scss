@@ -6,24 +6,28 @@ form {
     margin-bottom: 10px;
   }
 
-  input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+  input,
   select,
   textarea {
-    padding: 9px 11px;
+    padding: 8px 10px;
     outline: none;
     font-size: inherit;
     border: 1px solid #ddd;
-    width: 100%;
   }
 
   input[type="date"],
   input[type="time"],
   input[type="email"],
-  input[type="number"],
   input[type="tel"],
   input[type="text"],
   input[type="url"] {
-    }
+    width: 100%;
+  }
+
+
+  input[type="number"] {
+
+  }
 
   textarea {
     min-height: 150px;
