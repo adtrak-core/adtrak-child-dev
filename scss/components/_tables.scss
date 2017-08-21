@@ -8,6 +8,11 @@ table {
   -webkit-overflow-scrolling: touch;
   margin-bottom: 15px;
 
+  @include bp('medium') {
+    display: table;
+    max-width: 100%;
+  }
+
   thead {}
 
   tbody {}
